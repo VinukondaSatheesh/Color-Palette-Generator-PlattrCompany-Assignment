@@ -1,0 +1,103 @@
+
+.palette {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%; 
+    max-width: 500px;
+        margin: 10px auto; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease;
+  }
+  
+  .color-row {
+    display: flex;
+    flex-wrap: wrap; 
+        justify-content: center; 
+      }
+  
+  .color-block {
+    width: 80px;
+    height: 80px;
+    margin: 5px; 
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .color-block:hover {
+    transform: scale(1.05);
+  }
+  
+  .delete-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Responsive styles */
+  
+  /* Styles for small screens (mobile devices) */
+  @media (max-width: 600px) {
+    .color-block {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .delete-button {
+      font-size: 12px; 
+      padding: 4px 8px; 
+    }
+  
+    .palette {
+      padding: 8px; 
+    }
+  }
+  
+  /* Styles for medium screens (tablets, small laptops) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .color-block {
+      width: 70px; 
+      height: 70px;
+    }
+  
+    .delete-button {
+      font-size: 13px;
+      padding: 5px 9px;    }
+  
+    .palette {
+      padding: 10px;
+    }
+  }
+  
+  /* Styles for large screens (desktops, large laptops) */
+  @media (min-width: 1025px) {
+    .color-block {
+      width: 80px; 
+      height: 80px;
+    }
+  
+    .delete-button {
+      font-size: 14px; 
+      padding: 5px 10px;
+    }
+  
+    .palette {
+      padding: 10px; 
+    }
+  }
+  
